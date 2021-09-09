@@ -83,10 +83,6 @@ section{
 
 }
 
-section:nth-child(2){
-  background-color: green;
-}
-
 section:nth-child(3){
   background-color: blue;
 }
@@ -95,29 +91,37 @@ section:nth-child(4){
   background-color: red;
 }
 
+/* DESIGN HOMEPAGE */
+
 .homepage{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: right;
-  align-items: flex-end;
-  height: 628px;
+  height: 93vh;
   overflow: hidden;
 }
 
 .left{
   width: 25%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.left .line-vertical{
-  height: 628px;
+.line-vertical{
+  height: 100vh;
   width: 1px;
   background-color: white;
+}
+
+
+.empty{
+  width: 25%;
 }
 
 .right{
   width: 75%;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
 }
 
 
@@ -126,5 +130,47 @@ section:nth-child(4){
   font-size: 8em;
   line-height:90px;
   text-align: right;
+}
+
+.right h1:hover{
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+}
+
+/* END OF DESIGN HOMEPAGE */
+
+.about{
+  display: flex;
+  width: 100vw;
+}
+
+.left-about{  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-signet{
+  width: 80px;
+}
+
+.about-signet h3{
+  transform: rotate(-90deg);
+  font-size: 2em;
+  font-weight: 300;
+  letter-spacing: 10px;
+}
+
+.line-vertical-two{
+  height: 100vh;
+  width: 1px;
+  background-color: white;
+}
+
+.right{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 95vw;
 }
 
