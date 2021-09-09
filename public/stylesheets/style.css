@@ -83,9 +83,6 @@ section{
 
 }
 
-section:nth-child(3){
-  background-color: blue;
-}
 
 section:nth-child(4){
   background-color: red;

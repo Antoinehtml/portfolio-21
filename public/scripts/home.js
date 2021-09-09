@@ -3,6 +3,8 @@ gsap.from('.img' , {duration: 2, opacity: 0, x: -300, delay: 2, ease:"circ"})
 gsap.from('.h3' , {duration: 2, opacity: 0, y: -300, delay: 3, ease:"circ"})
 gsap.from('.p' , {duration: 10, opacity: 0, delay: 3, ease:"power1"})
 
+gsap.to('.languages-header' , {duration: 2, x: 950, delay: 5})
+
 const circleSvg = document.querySelector('svg');
 
 window.addEventListener('mousemove', (event) => {
