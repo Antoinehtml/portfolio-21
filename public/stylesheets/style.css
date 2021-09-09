@@ -6,6 +6,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
 
 body{
@@ -13,18 +14,49 @@ body{
   color: #fff;
 }
 
+/* CURSOR DESIGN AND ANIMATION */
+svg{
+  width: 60px;
+  position: absolute;
+  animation: rotation 5s infinite linear;
+  pointer-events: none;
+  transition: top .3s, left .3s;
+  transition-timing-function: ease-out;
+  z-index: 1000;
+}
+
+@keyframes rotation{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(-359deg);
+  }
+}
+
+text{
+  font-size: 4em;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  fill: #b74946;
+}
+
+/* END OF CURSOR DESIGN AND ANIMATION */
+
+/* NAVBAR DESIGN */
 nav{
   width: 100%;
+
 }
 
 .navbar{
   display: flex;
   justify-content: space-between;
   padding: 20px;
-
 }
 
 .navbar a{
+  font-weight: 300;
   text-decoration: none;
   color: #fff;
 }
@@ -34,7 +66,36 @@ nav{
   background-color: #fff;
   height: 1px;
 }
+
+/* END OF NAVBAR DESIGN */
+
 .container{
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  width: 100vw;
+}
+
+section{
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+
+}
+
+section:nth-child(2){
+  background-color: green;
+}
+
+section:nth-child(3){
+  background-color: blue;
+}
+
+section:nth-child(4){
+  background-color: red;
+}
+
+.homepage{
   display: flex;
   flex-wrap: wrap;
   justify-content: right;
@@ -61,7 +122,7 @@ nav{
 
 
 .right h1{
-  
+  font-weight: 700;
   font-size: 8em;
   line-height:90px;
   text-align: right;
