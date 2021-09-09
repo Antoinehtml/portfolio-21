@@ -155,7 +155,7 @@ section:nth-child(4){
 }
 
 .about-signet{
-  width: 80px;
+  width: 68px;
 }
 
 .about-signet h3{
@@ -195,4 +195,14 @@ section:nth-child(4){
 .right .text h3{
   padding-bottom: 20px;
 }
+
+
+/* DESIGN LANGUAGES PAGE */
+
+.languages-header{
+  padding: 20px;
+}
+
+/* END OF DESIGN LANGUAGES PAGE */
+
 
