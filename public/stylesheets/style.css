@@ -132,6 +132,10 @@ section:nth-child(4){
   text-align: right;
 }
 
+.right span{
+  padding-top: 5px;
+}
+
 .right h1:hover{
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 3px;
@@ -172,5 +176,23 @@ section:nth-child(4){
   justify-content: space-around;
   align-items: center;
   width: 95vw;
+}
+
+.right .image{
+  margin: 60px;
+}
+
+.right .text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 60px;
+  text-align: justify;
+  
+}
+
+.right .text h3{
+  padding-bottom: 20px;
 }
 
