@@ -70,8 +70,8 @@ nav{
 /* END OF NAVBAR DESIGN */
 
 .container{
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  /*scroll-snap-type: y mandatory;
+  overflow-y: scroll;*/
   height: 100vh;
   width: 100vw;
 }
@@ -79,12 +79,8 @@ nav{
 section{
   width: 100vw;
   height: 100vh;
-  scroll-snap-align: start;
+  /*scroll-snap-align: start;*/
 
-}
-
-section:nth-child(2){
-  background-color: green;
 }
 
 section:nth-child(3){
@@ -95,29 +91,37 @@ section:nth-child(4){
   background-color: red;
 }
 
+/* DESIGN HOMEPAGE */
+
 .homepage{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: right;
-  align-items: flex-end;
-  height: 628px;
+  height: 93vh;
   overflow: hidden;
 }
 
 .left{
   width: 25%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.left .line-vertical{
-  height: 628px;
+.line-vertical{
+  height: 100vh;
   width: 1px;
   background-color: white;
+}
+
+
+.empty{
+  width: 25%;
 }
 
 .right{
   width: 75%;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 
@@ -128,3 +132,84 @@ section:nth-child(4){
   text-align: right;
 }
 
+.right span{
+  padding-top: 5px;
+}
+
+.right h1:hover{
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+}
+
+/* END OF DESIGN HOMEPAGE */
+
+/* DESIGN ABOUT PAGE */
+
+.about{
+  display: flex;
+  width: 100vw;
+}
+
+.left-about{  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-signet{
+  width: 80px;
+}
+
+.about .about-signet h3{
+  transform: rotate(-90deg);
+  font-size: 2em;
+  font-weight: 300;
+  letter-spacing: 10px;
+}
+
+.line-vertical-two{
+  height: 100vh;
+  width: 1px;
+  background-color: white;
+}
+
+.right-about{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 95vw;
+}
+
+.right-about .image{
+  margin: 60px;
+}
+
+.right-about .text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 60px;
+  text-align: justify;
+  
+}
+
+.right-about .text h3{
+  padding-bottom: 20px;
+}
+
+.right-about .text .story{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.right-about .text .story p{
+  width: 50%;
+  padding: 20px;
+}
+
+.right-about .text .story .antoine{
+  font-size: .6em;
+}
+
+/* END OF DESIGN ABOUT PAGE */
