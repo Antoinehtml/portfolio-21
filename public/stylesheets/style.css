@@ -70,8 +70,8 @@ nav{
 /* END OF NAVBAR DESIGN */
 
 .container{
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  /*scroll-snap-type: y mandatory;
+  overflow-y: scroll;*/
   height: 100vh;
   width: 100vw;
 }
@@ -79,7 +79,7 @@ nav{
 section{
   width: 100vw;
   height: 100vh;
-  scroll-snap-align: start;
+  /*scroll-snap-align: start;*/
 
 }
 
@@ -120,7 +120,7 @@ section:nth-child(4){
   width: 75%;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   overflow: hidden;
 }
 
@@ -143,6 +143,8 @@ section:nth-child(4){
 
 /* END OF DESIGN HOMEPAGE */
 
+/* DESIGN ABOUT PAGE */
+
 .about{
   display: flex;
   width: 100vw;
@@ -158,7 +160,7 @@ section:nth-child(4){
   width: 80px;
 }
 
-.about-signet h3{
+.about .about-signet h3{
   transform: rotate(-90deg);
   font-size: 2em;
   font-weight: 300;
@@ -171,18 +173,18 @@ section:nth-child(4){
   background-color: white;
 }
 
-.right{
+.right-about{
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 95vw;
 }
 
-.right .image{
+.right-about .image{
   margin: 60px;
 }
 
-.right .text{
+.right-about .text{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -192,7 +194,22 @@ section:nth-child(4){
   
 }
 
-.right .text h3{
+.right-about .text h3{
   padding-bottom: 20px;
 }
 
+.right-about .text .story{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.right-about .text .story p{
+  width: 50%;
+  padding: 20px;
+}
+
+.right-about .text .story .antoine{
+  font-size: .6em;
+}
+
+/* END OF DESIGN ABOUT PAGE */
