@@ -39,7 +39,7 @@ gsap.from(".p" , {
 // LANGUAGES ANIMATIONS
 
 gsap.to(".title-language", {
-  duration: 4,
+  duration: 7,
   ease: "none",
   x: "+=500", //move each box 500px to right
   modifiers: {
