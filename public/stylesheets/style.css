@@ -83,10 +83,6 @@ section{
 
 }
 
-section:nth-child(3){
-  background-color: blue;
-}
-
 section:nth-child(4){
   background-color: red;
 }
@@ -221,12 +217,70 @@ section:nth-child(4){
 
 /* END OF DESIGN ABOUT PAGE */
 
+/* DESIGN LANGUAGES PAGE */
+
+.languages{
+  height: auto;
+  font-weight: 300;
+  overflow: hidden;
+}
+
+.title{
+  position: relative;
+  left: -500px;
+  padding: 10px;
+}
+
+.title h3{
+  font-size: 2em;
+  font-weight: 300;
+  letter-spacing: 10px;
+}
+
+.languages-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.language{
+  position: relative;
+  width: 200px;
+  height: 250px;
+  border: 1px solid #fff;
+  margin: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.language p{
+  text-align: center;
+  padding: 10px;
+}
+
+.negative{
+  position: absolute;
+  bottom: -250px;
+  width: 200px;
+  height: 250px;
+  background-color: #fff;
+  color: #0e1012;
+  overflow: scroll;
+  z-index: 3;
+  /*visibility: hidden;*/
+}
+
+/* END OF DESIGN LANGUAGES PAGE */
 
 
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 270px) and (max-width: 500px){
+@media screen and (min-width: 270px) and (max-width: 400px){
 
   .homepage{
     height: auto;
@@ -271,16 +325,18 @@ section:nth-child(4){
   .right-about .text .intro{
     text-align: center;
   }
+
+  
 }
 
-@media screen and (min-width: 270px) and (max-width:  500px) and (max-height:  750)
+@media screen and (min-width: 270px) and (max-width:  400px) and (max-height:  750)
   {
     .right-about .text .story{
     display: none;
   }
 }
 
-@media screen and (min-width: 501px) and (max-width: 700px){
+@media screen and (min-width: 401px) and (max-width: 700px){
   .homepage{
     height: auto;
   }
@@ -324,6 +380,10 @@ section:nth-child(4){
   .right-about .text .intro{
     text-align: center;
   }
+
+  .languages-content{
+    flex-direction: row;
+  }
 }
 
 @media screen and (min-width: 701px) and (max-width: 1350px){
@@ -362,4 +422,29 @@ section:nth-child(4){
   .right-about .text .story p{
     font-size: .9em;
   }
+
+  .languages-content{
+    flex-direction: row;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    padding: 0;
+  }
+
+  .language{
+  margin: 40px;
+  }
+}
+
+@media screen and (min-width: 1350px){
+  .languages-content{
+    flex-direction: row;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    padding: 0;
+  }
+
+  .language{
+  margin: 60px;
+  }
+
 }
