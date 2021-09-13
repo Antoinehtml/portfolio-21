@@ -98,7 +98,7 @@ section{
 }
 
 .line-vertical{
-  height: 100vh;
+  height: 120vh;
   width: 1px;
   background-color: white;
 }
@@ -140,7 +140,7 @@ section{
 .about{
   display: flex;
   width: 100vw;
-  height: 100vh;
+  height: auto;
 }
 
 .left-about{  
@@ -161,7 +161,7 @@ section{
 }
 
 .line-vertical-two{
-  height: 100vh;
+  height: 120vh;
   width: 1px;
   background-color: white;
 }
