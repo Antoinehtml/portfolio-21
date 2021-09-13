@@ -11,6 +11,7 @@ gsap.from(".image" , {
 	duration: 2
 })
 
+
 gsap.from(".antoine" , {
 	scrollTrigger: {
 		trigger: '.about',
