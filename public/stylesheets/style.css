@@ -386,11 +386,11 @@ button:hover{
   }
 
   .line-vertical{
-  height: 126vh;
+  height: 135vh;
   }
 
   .line-vertical-two{
-  height: 126vh;
+  height: 135vh;
   }
 
   .right-about .text .intro{
@@ -562,6 +562,13 @@ button:hover{
     font-size: .9em;
   }
 
+  .languages-content{
+    flex-direction: row;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 0;
+  }
+}
 
 @media screen and (min-width: 1151px) and (max-width: 1350px){
   .homepage{
