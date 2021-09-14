@@ -1,5 +1,9 @@
+// HOMEPAGE ANIMATION
+
 gsap.from('.right', {duration: 6, opacity: 0, ease:"power1"})
 
+
+// ABOUT ANIMATIONS
 
 gsap.from(".image" , {
 	scrollTrigger: {
@@ -19,7 +23,7 @@ gsap.from(".antoine" , {
 	},
 	y: -150,
 	opacity: 0,
-	duration: 3
+	duration: 2
 })
 
 gsap.from(".p" , {
@@ -29,35 +33,58 @@ gsap.from(".p" , {
 	},
 	x: 150,
 	opacity: 0,
-	duration: 3
+	duration: 2
+})
+
+// LANGUAGES ANIMATIONS
+
+gsap.to(".title-language", {
+  duration: 7,
+  ease: "none",
+  x: "+=500", //move each box 500px to right
+  modifiers: {
+    x: gsap.utils.unitize(x => parseFloat(x) % 500) //force x value to be between 0 and 500 using modulus
+  },
+  repeat: -1
+});
+
+
+const languages = document.querySelectorAll(".language")
+
+languages.forEach((language) => {
+	language.addEventListener('mouseenter', (event) =>{	
+		let negative = language.querySelector(".negative")
+		
+		gsap.to(negative, {
+		  duration: .8,
+		  ease: "power1",
+		  y: -250	  
+		});
+	})	
+
+	language.addEventListener('mouseleave', (event) =>{	
+		let negative = language.querySelector(".negative")
+		
+		gsap.to(negative, {
+		  duration: .8,
+		  ease: "power1",
+		  y: 0	  
+		});
+	})	
 })
 
 
 
-// gsap.to(".square", {
-// 	scrollTrigger: {
-// 		trigger: '.sq',
-// 		start: "top centre"
-// 	},
-// 	x: 500
-// })
-
-// gsap.from('.pic' , {duration: 2, opacity: 0, x: -300, delay: 2, ease:"circ"})
-// gsap.from('.h3' , {duration: 2, opacity: 0, y: -300, delay: 3, ease:"circ"})
-// gsap.from('.p' , {duration: 10, opacity: 0, delay: 3, ease:"power1"})
 
 
 
 
 
+// const circleSvg = document.querySelector('svg');
 
-
-const circleSvg = document.querySelector('svg');
-
-window.addEventListener('mousemove', (event) => {
-	circleSvg.style.top = event.clientY - 30;
-	circleSvg.style.left = event.clientX - 30;
-});
-
+// window.addEventListener('mousemove', (event) => {
+// 	circleSvg.style.top = event.clientY - 30;
+// 	circleSvg.style.left = event.clientX - 30;
+// });
 
 
