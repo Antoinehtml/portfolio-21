@@ -13,7 +13,7 @@
 </head>
 <body>
   <nav>
-    <div class="navbar">
+    <div class="navbar" id="navbar">
       <div class="name">
         <h3><a href="">antoine coulon.</a></h3>
       </div>
@@ -21,7 +21,9 @@
         <a href=""><h3>Portfolio 2021 &copy;</a></h3>
       </div>
       <div class="menu">
-        <a href="">X</a>
+        <div class="hamburger-line" id="lineUp"></div>
+        <div class="hamburger-line" id="hidden"></div>
+        <div class="hamburger-line" id="lineDown"></div>
       </div>
     </div>
     <div class="line-horizontal">
@@ -30,15 +32,21 @@
     </div>
   </nav>
   <div class="container">
-    <section class="homepage">
+    <section class="homepage" id="homepage">
       <div class="left">
         <div class="line-vertical"></div>
       </div>
       <div class="right">
-        <h1>JUNIOR FRONT-END DEVELOPER BASED IN BRUSSELS, <span>BELGIUM</span></h1>
+        <h1 class="homepage-title">JUNIOR FRONT-END DEVELOPER BASED IN BRUSSELS, <span>BELGIUM</span></h1>
+        <div class="menu-page" id="menuPage">
+          <a href="#homepage">[home.]</a>
+          <a href="#about">[about.]</a>
+          <a href="#languages">[languages.]</a>
+          <a href="#contact">[contact.]</a>
+        </div>
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="left-about">
         <div class="line-vertical">
         </div>
@@ -63,7 +71,7 @@
       </div>
     </section>
 
-    <section class="languages">
+    <section class="languages" id="languages">
       <div class="languages-header">
         <div class="line-horizontal"></div>
         <div class="title">
@@ -99,7 +107,7 @@
       </div>
       <div class="line-horizontal"></div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="left-contact">
         <div class="contact-name">
           <h3>[name.]</h3>
