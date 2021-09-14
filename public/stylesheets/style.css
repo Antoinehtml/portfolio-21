@@ -306,7 +306,7 @@ section{
 }
 
 .contact-name{
-  margin-top: 100px;
+  margin-top: 140px;
   margin-bottom: 20px;
 }
 
@@ -416,6 +416,10 @@ button:hover{
     text-align: center;
   }
 
+  .contact-name{
+    margin-top: 40px;
+  }
+
   .contact-title{
   width: 35px;
   }
@@ -477,6 +481,10 @@ button:hover{
     flex-direction: row;
   }
 
+  .contact-name{
+    margin-top: 40px;
+  }
+
   .contact-title{
   width: 35px;
   }
@@ -521,7 +529,7 @@ button:hover{
 
   .languages-content{
     flex-direction: row;
-    margin-top: 40px;
+    margin-top: 60px;
     margin-bottom: 60px;
     padding: 0;
   }
@@ -529,13 +537,17 @@ button:hover{
   .language{
   margin: 40px;
   }
+
+  .contact-name{
+    margin-top: 60px;
+  }
 }
 
 @media screen and (min-width: 1350px){
   .languages-content{
     flex-direction: row;
     margin-top: 80px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     padding: 0;
   }
 
