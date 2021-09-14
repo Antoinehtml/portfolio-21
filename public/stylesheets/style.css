@@ -421,16 +421,15 @@ button:hover{
   }
 }
 
-@media screen and (min-width: 270px) and (max-width:  400px) and (max-height:  750)
-  {
-    .right-about .text .story{
+@media screen and (min-width: 270px) and (max-width:  400px) and (max-height:  750){
+  .right-about .text .story{
     display: none;
   }
 }
 
 @media screen and (min-width: 401px) and (max-width: 700px){
   .homepage{
-    height: auto;
+    height: 90vh;
   }
 
   .portfolio h3 {
@@ -484,7 +483,7 @@ button:hover{
 
 @media screen and (min-width: 701px) and (max-width: 1350px){
   .homepage{
-    height: auto;
+    height: 90vh;
   }
 
   .right h1{
