@@ -130,6 +130,11 @@ section{
   border-bottom: 1px solid #fff;
 }
 
+.menu-page a:hover{
+  background-color: #fff;
+  color: #0e1012;
+}
+
 
 .homepage{
   display: flex;
@@ -415,6 +420,23 @@ button{
 button:hover{
   background-color: #fff;
   color: #0e1012;
+}
+
+.popup{
+  z-index: 99;
+  border: 1px solid #fff;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: #0e0f12;
+  padding: 50px;
+  visibility: hidden;
+  text-align: center;
+}
+
+.popup p{
+  font-weight: 300;
+  font-size: 1.2em;
 }
 
 /* END OF DESIGN CONTACT PAGE */
