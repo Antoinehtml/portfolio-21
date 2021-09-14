@@ -148,7 +148,7 @@ section:nth-child(4){
 .about{
   display: flex;
   width: 100vw;
-  height: 100vh;
+  height: auto;
 }
 
 .left-about{  
@@ -233,7 +233,7 @@ section:nth-child(4){
 @media screen and (min-width: 270px) and (max-width: 500px){
 
   .homepage{
-    height: auto;
+    height: 90vh;
   }
 
   .portfolio h3 {
@@ -243,6 +243,18 @@ section:nth-child(4){
   .right h1{
     font-size: 3em;
     line-height: 35px;
+  }
+
+  .line-vertical{
+  height: 126vh;
+  }
+
+  .line-vertical-two{
+  height: 126vh;
+  }
+
+  .right-about .text .intro{
+    padding-bottom: 20px;
   }
 
   .about-signet{
@@ -286,7 +298,7 @@ section:nth-child(4){
 
 @media screen and (min-width: 501px) and (max-width: 700px){
   .homepage{
-    height: auto;
+    height: 90vh;
   }
 
   .portfolio h3 {
@@ -296,6 +308,18 @@ section:nth-child(4){
   .right h1{
     font-size: 3em;
     line-height: 35px;
+  }
+
+  .line-vertical{
+  height: 126vh;
+  }
+
+  .line-vertical-two{
+  height: 126vh;
+  }
+
+  .right-about .text .intro{
+    padding-bottom: 20px;
   }
 
   .about-signet{
@@ -332,12 +356,24 @@ section:nth-child(4){
 
 @media screen and (min-width: 701px) and (max-width: 1150px){
   .homepage{
-    height: auto;
+    height: 95vh;
   }
 
   .right h1{
     font-size: 7em;
     line-height: 80px;
+  }
+
+  .line-vertical{
+  height: 144vh;
+  }
+
+  .line-vertical-two{
+  height: 144vh;
+  }
+
+  .right-about .text .intro{
+    padding-bottom: 20px;
   }
 
   .right-about{
@@ -365,12 +401,28 @@ section:nth-child(4){
 
 @media screen and (min-width: 1151px) and (max-width: 1350px){
   .homepage{
-    height: auto;
+    height: 95vh;
   }
 
   .right h1{
     font-size: 7em;
     line-height: 80px;
+  }
+
+  .about{
+    height: auto;
+  }
+
+  .line-vertical{
+  height: 147vh;
+  }
+
+  .line-vertical-two{
+  height: 147vh;
+  }
+
+  .right-about .text .intro{
+    padding-bottom: 20px;
   }
 
   .right-about{
