@@ -1,7 +1,44 @@
+// NAVBAR HAMBURGER ANIMATION
+
+const hamburger = document.querySelector(".menu")
+const menuPage = document.querySelector(".menu-page")
+const initHamburger = () => {
+	document.getElementById("hidden").style.display = "none";
+	document.getElementById("lineUp").style.transform = "rotate(45deg)";
+	document.getElementById("lineUp").style.margin = "0";
+	document.getElementById("lineUp").style.position = "absolute";
+	document.getElementById("lineDown").style.transform = "rotate(-45deg)";
+	document.getElementById("menuPage").style.visibility = "visible";
+	document.getElementById("menuPage").style.transform = "translateY(149px)";
+}
+
+const closeHamburger = () => {
+	document.getElementById("hidden").style.display = "";
+	document.getElementById("lineUp").style.transform = "";
+	document.getElementById("lineUp").style.margin = "";
+	document.getElementById("lineUp").style.position = "";
+	document.getElementById("lineDown").style.transform = "";
+	document.getElementById("menuPage").style.visibility = "";
+	document.getElementById("menuPage").style.transform = "";
+}
+
+
+hamburger.addEventListener('mouseenter', (event) => {
+	initHamburger()
+})
+
+menuPage.addEventListener('mouseleave', (event) => {
+	closeHamburger()
+})
+
+
+
+// Display menu
+
+
 // HOMEPAGE ANIMATION
 
-gsap.from('.right', {duration: 6, opacity: 0, ease:"power1"})
-
+gsap.from('.homepage-title', {duration: 6, opacity: 0, ease:"power1"})
 
 // ABOUT ANIMATIONS
 
