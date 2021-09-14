@@ -111,19 +111,22 @@
       <div class="left-contact">
         <div class="contact-name">
           <h3>[name.]</h3>
-          <input id="contact-name" type="text">
+          <input id="contactName" type="text">
         </div>
         <div class="contact-email">
           <h3>[email.]</h3>
-          <input id="contact-email" type="text">
+          <input id="contactEmail" type="text">
         </div>
         <div class="contact-subject">
           <h3>[subject.]</h3>
-          <textarea name="text" id="contact-subject" cols="100" rows="10"></textarea>
+          <textarea name="text" id="contactSubject" cols="100" rows="10"></textarea>
         </div>
         <div class="button-submit">
-        <button>let's connect</button>
-      </div>
+          <button onClick='sendMail()' id="submitButton">let's connect</button>
+        </div>
+        <div class="popup">
+          <p>thanks for contacting me. <br>I will get back to you ASAP.</p>
+        </div>
       </div>
       <div class="right-contact">
         <div class="line-vertical"></div>
@@ -150,7 +153,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
 
   <script src="static/scripts/home.js"></script>
+  <script src="static/scripts/contact.js"></script>
 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+  (function() {
+  emailjs.init("user_N0BE30hQ0V9a0Dr6ZrJyc");
+  })();
+  </script>
 
 </body>
 </html>

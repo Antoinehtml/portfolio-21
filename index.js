@@ -15,7 +15,7 @@ app.get('/',(req, res) => {
   res.render('home.ejs');
 });
 
-
+// API Setup
 
 
 // app.listen(3000, () => console.log("Server UP"));
