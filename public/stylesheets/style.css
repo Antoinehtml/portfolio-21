@@ -373,7 +373,7 @@ button:hover{
 @media screen and (min-width: 270px) and (max-width: 400px){
 
   .homepage{
-    height: auto;
+    height: 90vh;
   }
 
   .portfolio h3 {
