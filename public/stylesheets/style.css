@@ -581,6 +581,10 @@ footer a{
     text-align: center;
   }
 
+  .languages{
+    height: auto;
+  }
+
   .contact-name{
     margin-top: 80px;
     margin-bottom: 5px;
@@ -593,6 +597,48 @@ footer a{
 
   .contact-subject{
     margin-bottom: 5px;
+  }
+
+  .footer-container{
+    padding:  20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .socials-icons{
+    display: flex;
+    justify-content: center;
+  }
+
+  .socials h3{
+    padding-top: 10px;
+  }
+
+  .socials-icons .github{
+    padding-right: 10px;
+  }
+
+  .contact-footer h3{
+    padding-top: 10px;
+  }
+
+  .pages-footer{
+    width: 200px;
+  }
+
+  .pages-footer h3{
+    padding-top: 10px;
+  }
+
+  .footer-time #datetime{
+    display: none;
+  }
+
+  .footer-copyright p{
+    text-align: end;
   }
 }
 
@@ -672,6 +718,55 @@ footer a{
   .contact-subject{
     margin-bottom: 5px;
   }
+
+  .footer-container{
+    padding:  20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: start;
+  }
+
+  .footer-info{
+    margin-right: 20px;
+  }
+
+  .socials{
+    margin-right: 20px;
+  }
+
+  .contact-footer{
+    margin-right: 20px;
+  }
+
+  .socials-icons{
+    display: flex;
+    justify-content: center;
+  }
+
+  .socials h3{
+    padding-top: 10px;
+  }
+
+  .socials-icons .github{
+    padding-right: 10px;
+  }
+
+  .contact-footer h3{
+    padding-top: 10px;
+  }
+
+  .pages-footer h3{
+    padding-top: 10px;
+  }
+
+  .footer-time #datetime{
+    display: none;
+  }
+
+  .footer-copyright p{
+    text-align: end;
+  }
 }
 
 @media screen and (min-width: 701px) and (max-width: 1350px){
@@ -741,6 +836,23 @@ footer a{
 
   .contact-subject{
     margin-bottom: 5px;
+  }
+
+  .footer-container{
+    padding:  20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: start;
+  }
+
+  .socials-icons{
+    display: flex;
+    justify-content: center;
+  }
+
+  .socials-icons .github{
+    padding-right: 10px;
   }
 }
 

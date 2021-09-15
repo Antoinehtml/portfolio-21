@@ -117,9 +117,31 @@ var dt = new Date();
 document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
 
 
+// POSITION NAVBAR WITHOUT FOOTER
+
+const navFloat = document.querySelector('.nav')
+const footer = document.querySelector('.footer')
+const languagesPage = document.querySelector('.languages')
 
 
+const checkOffset = () => {
+	function getRectTop(el){
+		const rect = el.getBoundingClientRect();
+		return rect.top ;
+	}
+	if((getRectTop(navFloat) + document.body.scrollTop) + navFloat.offsetHeight >= (getRectTop(footer) + document.body.scrollTop) - 700)
+    navFloat.style.position = 'absolute';
+  if(document.body.scrollTop + window.innerHeight < (getRectTop(footer) + document.body.scrollTop))
+    navFloat.style.position = 'fixed'; // restore when you scroll up
 
+
+}
+
+document.addEventListener('scroll', function(){
+	checkOffset()
+})
+
+// CURSOR
 // const circleSvg = document.querySelector('svg');
 
 // window.addEventListener('mousemove', (event) => {
