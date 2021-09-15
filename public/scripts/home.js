@@ -48,7 +48,7 @@ hamburger.addEventListener('mouseenter', (event) => {
 	initHamburger()
 })
 
-menuPage.addEventListener('mouseleave', (event) => {
+menuPage.addEventListener('click', (event) => {
 	closeHamburger()
 })
 
