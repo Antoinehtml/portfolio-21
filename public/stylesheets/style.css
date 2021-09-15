@@ -116,7 +116,7 @@ nav{
   height: auto;
   border: 1px solid #fff;
   position: fixed;
-  left:35%;
+  left:85%;
   top: -81px;
   background-color: #0e1012; 
   visibility: hidden;
@@ -143,6 +143,7 @@ nav{
   height: 100vh;
   overflow: hidden;
   width: 100vw !important ;
+  margin-right: 10px;
 }
 
 .left{
@@ -553,6 +554,9 @@ footer a{
   left: 67%;
   }
 
+  .homepage .right{
+    margin-right: 20px;
+  }
 
   .portfolio h3 {
     display: none;
@@ -581,6 +585,7 @@ footer a{
 
   .right-about{
     flex-direction: column;
+    justify-content: center;
     padding: 0;
   }
 
@@ -591,7 +596,12 @@ footer a{
 
   .right-about .text{
     flex-direction: row;
+    margin-top: 60px;
     padding: 20px;
+  }
+
+  .right-about .story{
+    margin-top: 60px;
   }
 
   .right-about .text p{
@@ -678,6 +688,10 @@ footer a{
     display: none;
   }
 
+  .homepage .right{
+    margin-right: 20px;
+  }
+
   .right h1{
     font-size: 3em;
     line-height: 35px;
@@ -701,6 +715,7 @@ footer a{
 
   .right-about{
     flex-direction: column;
+    justify-content: center;
     padding: 0;
   }
 
@@ -711,7 +726,12 @@ footer a{
 
   .right-about .text{
     flex-direction: row;
+    margin-top: 60px;
     padding: 20px;
+  }
+
+  .right-about .story{
+    margin-top: 60px;
   }
 
   .right-about .text p{
@@ -806,6 +826,7 @@ footer a{
 
   .homepage{
     padding-top: 68px;
+    margin-right: 20px;
   }
 
   .line-vertical{
@@ -822,17 +843,23 @@ footer a{
 
   .right-about{
     flex-direction: column;
+    justify-content: center;
     padding: 0;
   }
 
   .right-about img{
-    width: 350px;
-    height: 350px;
+    width: 500px;
+    height: 500px;
   }
 
   .right-about .text{
     flex-direction: row;
+    margin-top: 60px;
     padding: 22px;
+  }
+
+  .right-about .story{
+    margin-top: 60px;
   }
 
   .right-about .text p{
@@ -890,6 +917,19 @@ footer a{
 }
 
 @media screen and (min-width: 1151px) and (max-width: 1350px){
+  .right-about img {
+    width: 700px;
+    height: 700px;
+  }
+
+  .right-about .text .antoine {
+    font-size: .8em;
+  }
+
+  .text .story p {
+    font-size: 1.2em;
+  }
+
   .languages-content{
     flex-direction: row;
     margin-top: 60px;

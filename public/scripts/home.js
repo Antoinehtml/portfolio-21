@@ -49,11 +49,6 @@ menuPage.addEventListener('mouseleave', (event) => {
 	closeHamburger()
 })
 
-
-
-// Display menu
-
-
 // HOMEPAGE ANIMATION
 
 gsap.from('.homepage-title', {duration: 6, opacity: 0, ease:"power1"})
@@ -63,7 +58,7 @@ gsap.from('.homepage-title', {duration: 6, opacity: 0, ease:"power1"})
 gsap.from(".image" , {
 	scrollTrigger: {
 		trigger: '.about',
-		start: "bottom center"
+		start: "right center"
 	},
 	x: -150,
 	opacity: 0,
