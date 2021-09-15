@@ -3,6 +3,7 @@
 gsap.registerPlugin(ScrollTrigger)
 
 let scroll = document.getElementById("scroll")
+let about = document.getElementById("about")
 
 gsap.to(scroll, {
   xPercent: -50,
@@ -11,7 +12,9 @@ gsap.to(scroll, {
     trigger: scroll,
     pin: true,
     scrub: 0,
-    snap:false,
+    snap:{
+    	snapTo: about, duration: 0.7, ease: "power1.inOut"
+    },
     end: () => "+=" + document.getElementById('languages').offsetWidth
   }
 })
