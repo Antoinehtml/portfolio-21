@@ -701,6 +701,10 @@ footer a{
     text-align: center;
   }
 
+  .languages{
+    height: auto;
+  }
+
   .languages-content{
     flex-direction: row;
   }
