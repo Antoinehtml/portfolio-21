@@ -87,25 +87,6 @@ nav{
   margin-bottom: 5px;
 }
 
-/* END OF NAVBAR DESIGN */
-
-.container{
-/*  scroll-snap-type: y mandatory;
-  overflow-y: scroll;*/
-  height: 100vh;
-  width: 100vw;
-}
-
-/*section{
-  width: 100vw;
-  height: 100vh;
-  /*scroll-snap-align: start;*/
-/*}*/
-
-/* DESIGN HOMEPAGE */
-
-
-
 .menu-page{
   z-index: 100;
   display: flex;
@@ -137,6 +118,22 @@ nav{
   color: #0e1012;
 }
 
+/* END OF NAVBAR DESIGN */
+
+.container{
+/*  scroll-snap-type: y mandatory;
+  overflow-y: scroll;*/
+  height: 100vh;
+  width: 100vw;
+}
+
+/*section{
+  width: 100vw;
+  height: 100vh;
+  /*scroll-snap-align: start;*/
+/*}*/
+
+/* DESIGN HOMEPAGE */
 
 .homepage{
   display: flex;
