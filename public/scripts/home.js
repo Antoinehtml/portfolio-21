@@ -10,7 +10,7 @@ gsap.to(scroll, {
   scrollTrigger: {
     trigger: scroll,
     pin: true,
-    scrub: 2,
+    scrub: 0,
     snap:false,
     end: () => "+=" + document.getElementById('languages').offsetWidth
   }
