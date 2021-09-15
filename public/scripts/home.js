@@ -1,3 +1,21 @@
+// HORIZONTAL SCROLL 
+
+gsap.registerPlugin(ScrollTrigger)
+
+let scroll = document.getElementById("scroll")
+
+gsap.to(scroll, {
+  xPercent: -50,
+  ease: "power1",
+  scrollTrigger: {
+    trigger: scroll,
+    pin: true,
+    scrub: 1,
+    snap:false,
+    end: () => "+=" + document.getElementById('languages').offsetWidth
+  }
+})
+
 // NAVBAR HAMBURGER ANIMATION
 
 const hamburger = document.querySelector(".menu")
@@ -45,7 +63,7 @@ gsap.from('.homepage-title', {duration: 6, opacity: 0, ease:"power1"})
 gsap.from(".image" , {
 	scrollTrigger: {
 		trigger: '.about',
-		start: "top center"
+		start: "bottom center"
 	},
 	x: -150,
 	opacity: 0,
@@ -109,6 +127,19 @@ languages.forEach((language) => {
 		});
 	})	
 })
+
+gsap.from(".language" , {
+	scrollTrigger: {
+		trigger: '.languages-header',
+		start: "top top"
+	},
+	x: -150,
+	ease: "power1",
+	opacity: 0,
+	duration: 1
+})
+
+
 
 
 // TIME ON FOOTER
