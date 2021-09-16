@@ -278,6 +278,10 @@ nav{
  /* padding: 20px;*/
 }
 
+img{
+  filter: grayscale(100%);
+}
+
 .right-about .text .antoine{
   font-size: .7em;
 }
