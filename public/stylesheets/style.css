@@ -55,6 +55,7 @@ nav{
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  background-color: #0e1012;
 }
 
 .navbar a{
@@ -189,11 +190,6 @@ nav{
 
 /* DESIGN ABOUT PAGE */
 
-.test{
-  width: 100vw;
-  height: 100vh;
-  background-color: red;
-}
 
 .horizontal-scroll{
   display: flex;
@@ -259,11 +255,12 @@ nav{
 
 .right-about .text p{
   width: 50%;
+  font-size: .9em;
  /* padding: 20px;*/
 }
 
 .right-about .text .antoine{
-  font-size: .6em;
+  font-size: .7em;
 }
 
 .right-about .text .intro{
@@ -321,6 +318,9 @@ nav{
 }
 
 .language{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   width: 200px;
   height: 250px;
@@ -336,6 +336,9 @@ nav{
 }
 
 .negative{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: absolute;
   bottom: -250px;
   width: 200px;
@@ -344,6 +347,13 @@ nav{
   color: #0e1012;
   overflow: scroll;
   z-index: 3;
+  padding: 20px;
+}
+
+.negative li{
+  padding-bottom: 10px;
+  text-align: center;
+  list-style: none;
 }
 
 /* END OF DESIGN LANGUAGES PAGE */
@@ -608,6 +618,7 @@ footer a{
 
   .right-about .text .story p{
     font-size: .8em;
+    text-align: start;
   }
 
   .right-about .text .intro{
