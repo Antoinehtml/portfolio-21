@@ -160,7 +160,7 @@ const resizeLanguage = () => {
 				start: "bottom center"
 			},
 			x: -150,
-			delay: .5,
+			delay: .2,
 			ease: "power1",
 			opacity: 0,
 			duration: 1
