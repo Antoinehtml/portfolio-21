@@ -697,6 +697,11 @@ footer a{
 }
 
 @media screen and (min-width: 401px) and (max-width: 700px){
+
+  .navbar{
+    background-color: transparent;
+  }
+
   .portfolio h3 {
     display: none;
   }
