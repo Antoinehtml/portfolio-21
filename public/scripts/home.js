@@ -101,7 +101,6 @@ gsap.to(".title-language", {
   repeat: -1
 });
 
-
 const languages = document.querySelectorAll(".language")
 
 languages.forEach((language) => {
@@ -126,16 +125,34 @@ languages.forEach((language) => {
 	})	
 })
 
-gsap.from(".language" , {
-	scrollTrigger: {
-		trigger: '.languages-header',
-		start: "top top"
-	},
-	x: -150,
-	ease: "power1",
-	opacity: 0,
-	duration: 1
-})
+const resize = () => {
+	if(window.matchMedia("(min-width: 700px").matches){
+		gsap.from(".language" , {
+			scrollTrigger: {
+				trigger: '.languages-header',
+				start: "top top"
+			},
+			x: -150,
+			ease: "power1",
+			opacity: 0,
+			duration: 1
+		})
+	} else {
+		gsap.from(".language" , {
+			scrollTrigger: {
+				trigger: '.about',
+				start: "bottom top"
+			},
+			x: -150,
+			ease: "power1",
+			opacity: 0,
+			duration: 1
+		})
+	} 
+}
+
+resize()
+
 
 
 
