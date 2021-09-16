@@ -143,6 +143,11 @@
 
 @media screen and (min-width: 401px) and (max-width: 700px){
 
+  .menu-page{
+    width: 120px;
+    left: 70%;
+  }
+
   .navbar{
     background-color: transparent;
   }
