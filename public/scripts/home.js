@@ -88,7 +88,7 @@ disAnimationNavbar();
 
 
 const appearAnimationNavbar = () => {
-	if(window.matchMedia("(max-width: 700px)").matches){
+	if(window.matchMedia("(max-width: 800px)").matches){
 		gsap.to(".name" , {
 			scrollTrigger: {
 				trigger: '.homepage',
