@@ -58,15 +58,31 @@ gsap.from('.homepage-title', {duration: 6, opacity: 0, ease:"power1"})
 
 // ABOUT ANIMATIONS
 
-gsap.from(".image" , {
-	scrollTrigger: {
-		trigger: '.about',
-		start: "right center"
-	},
-	x: -150,
-	opacity: 0,
-	duration: 2
-})
+const resizeAbout = () => {
+	if(window.matchMedia("(min-width: 700px)").matches){
+		gsap.from(".image" , {
+			scrollTrigger: {
+				trigger: '.about',
+				start: "center center"
+			},
+			x: -150,
+			opacity: 0,
+			duration: 2
+		})
+	} else {
+			gsap.from(".image" , {
+				scrollTrigger: {
+					trigger: '.about',
+					start: "center center"
+				},
+				x: -150,
+				opacity: 0,
+				duration: 2
+			})
+		}
+}
+
+resizeAbout();
 
 
 gsap.from(".antoine" , {
@@ -125,8 +141,8 @@ languages.forEach((language) => {
 	})	
 })
 
-const resizeAbout = () => {
-	if(window.matchMedia("(min-width: 700px").matches){
+const resizeLanguage = () => {
+	if(window.matchMedia("(min-width: 700px)").matches){
 		gsap.from(".language" , {
 			scrollTrigger: {
 				trigger: '.languages-header',
@@ -152,7 +168,7 @@ const resizeAbout = () => {
 	} 
 }
 
-resizeAbout()
+resizeLanguage()
 
 
 
