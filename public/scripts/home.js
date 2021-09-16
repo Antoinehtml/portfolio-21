@@ -44,23 +44,31 @@ const closeHamburger = () => {
 }
 
 
-hamburger.addEventListener('mouseenter', (event) => {
-	initHamburger()
+// hamburger.addEventListener('mouseenter', (event) => {
+// 	initHamburger()
+// })
+
+hamburger.addEventListener('click', (event) => {
+	let cardContainer = document.querySelector('.menu-page');
+  cardContainer.classList.toggle('visible-menu')
+  hamburger.classList.toggle('openmenu')
 })
 
 hamburger.addEventListener('click', (event) => {
-	closeHamburger()
+
+	document.getElementById("menuPage").classList.add("visible");
 })
 
 // NAV DISAPPEARING
 
-const animationNavbar = () => {
+const disAnimationNavbar = () => {
 	if(window.matchMedia("(max-width: 700px)").matches){
 		gsap.to(".name" , {
 			scrollTrigger: {
 				trigger: '.about',
 				start: "center center"
 			},
+			duration: 1,
 			opacity: 0,
 			ease: "power2"
 		})
@@ -70,14 +78,38 @@ const animationNavbar = () => {
 				trigger: '.about',
 				start: "center center"
 			},
-			opacity: 0,
+			duration: 1,
+			opacity: 0
 		})
 	}
 }
 
-animationNavbar();
+disAnimationNavbar();
 
 
+const appearAnimationNavbar = () => {
+	if(window.matchMedia("(max-width: 700px)").matches){
+		gsap.to(".name" , {
+			scrollTrigger: {
+				trigger: '.homepage',
+				start: "top top"
+			},
+			opacity: 1,
+			ease: "power2",
+
+		})
+
+		gsap.to("#line-navbar" , {
+			scrollTrigger: {
+				trigger: '.homepage',
+				start: "center top"
+			},
+			opacity: 1,
+		})
+	}
+}
+
+// appearAnimationNavbar()
 
 // HOMEPAGE ANIMATION
 

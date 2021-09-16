@@ -91,7 +91,7 @@ nav{
 
 .menu-page{
   z-index: 100;
-  display: flex;
+  /*display: flex;*/
   flex-direction: column;
   justify-content: center;
   text-align: end;
@@ -100,9 +100,28 @@ nav{
   border: 1px solid #fff;
   position: fixed;
   left:85%;
-  top: -81px;
+  top: 68px;
   background-color: #0e1012; 
-  visibility: hidden;
+  display: none;
+}
+
+.visible-menu{
+  display: flex;
+}
+
+.openmenu #hidden{
+    display: none;
+
+}
+.openmenu #lineUp{
+  transform: rotate(45deg);
+  margin:0;
+  position: absolute;
+
+}
+
+.openmenu #lineDown{
+  transform: rotate(-45deg);
 }
 
 .menu-page a{
