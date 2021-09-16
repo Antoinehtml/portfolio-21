@@ -52,6 +52,8 @@ hamburger.addEventListener('click', (event) => {
 	closeHamburger()
 })
 
+// NAV DISAPPEARING
+
 // HOMEPAGE ANIMATION
 
 gsap.from('.homepage-title', {duration: 6, opacity: 0, ease:"power1"})
