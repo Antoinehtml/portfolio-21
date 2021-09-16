@@ -149,6 +149,7 @@ const languages = document.querySelectorAll(".language")
 languages.forEach((language) => {
 	language.addEventListener('mouseenter', (event) =>{	
 		let negative = language.querySelector(".negative")
+		negative.parentElement.style.border = "none"
 		
 		gsap.to(negative, {
 		  duration: .8,
@@ -159,6 +160,7 @@ languages.forEach((language) => {
 
 	language.addEventListener('mouseleave', (event) =>{	
 		let negative = language.querySelector(".negative")
+		negative.parentElement.style.border = "1px solid #fff"
 		
 		gsap.to(negative, {
 		  duration: .8,
