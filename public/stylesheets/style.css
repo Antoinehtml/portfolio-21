@@ -557,13 +557,17 @@ footer a{
 
 @media screen and (min-width: 270px) and (max-width: 400px){
 
+  .navbar{
+    background-color: transparent;
+  }
+
   .menu-page{
   width: 33%;
   left: 67%;
   }
 
   .homepage .right{
-    margin-right: 20px;
+    margin-right: 5px;
   }
 
   .portfolio h3 {

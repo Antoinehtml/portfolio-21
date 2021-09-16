@@ -54,6 +54,31 @@ hamburger.addEventListener('click', (event) => {
 
 // NAV DISAPPEARING
 
+const animationNavbar = () => {
+	if(window.matchMedia("(max-width: 700px)").matches){
+		gsap.to(".name" , {
+			scrollTrigger: {
+				trigger: '.about',
+				start: "center center"
+			},
+			opacity: 0,
+			ease: "power2"
+		})
+
+		gsap.to("#line-navbar" , {
+			scrollTrigger: {
+				trigger: '.about',
+				start: "center center"
+			},
+			opacity: 0,
+		})
+	}
+}
+
+animationNavbar();
+
+
+
 // HOMEPAGE ANIMATION
 
 gsap.from('.homepage-title', {duration: 6, opacity: 0, ease:"power1"})
