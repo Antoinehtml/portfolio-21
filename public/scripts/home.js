@@ -125,7 +125,7 @@ languages.forEach((language) => {
 	})	
 })
 
-const resize = () => {
+const resizeAbout = () => {
 	if(window.matchMedia("(min-width: 700px").matches){
 		gsap.from(".language" , {
 			scrollTrigger: {
@@ -141,9 +141,10 @@ const resize = () => {
 		gsap.from(".language" , {
 			scrollTrigger: {
 				trigger: '.about',
-				start: "bottom top"
+				start: "bottom center"
 			},
 			x: -150,
+			delay: .5,
 			ease: "power1",
 			opacity: 0,
 			duration: 1
@@ -151,7 +152,7 @@ const resize = () => {
 	} 
 }
 
-resize()
+resizeAbout()
 
 
 
