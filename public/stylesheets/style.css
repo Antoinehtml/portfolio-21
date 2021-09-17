@@ -183,7 +183,7 @@ nav{
 
 .right{
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   overflow: hidden;
 }
@@ -194,6 +194,7 @@ nav{
   font-size: 8em;
   line-height:90px;
   text-align: right;
+  width: 75%;
 }
 
 .right span{
@@ -203,6 +204,18 @@ nav{
 .right h1:hover{
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 3px;
+}
+
+
+.filter{
+  filter: url(#noise);
+}
+
+svg {
+  width: auto;
+  height: auto;
+  max-width: 90%;
+  max-height: 90%;
 }
 
 /* END OF DESIGN HOMEPAGE */
@@ -278,9 +291,14 @@ nav{
  /* padding: 20px;*/
 }
 
-img{
-  filter: grayscale(100%);
+.image{
+  display: inline-block;
 }
+
+img{
+  filter: url(#grayscale);
+}
+
 
 .right-about .text .antoine{
   font-size: .7em;

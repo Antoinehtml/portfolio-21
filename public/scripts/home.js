@@ -71,15 +71,7 @@ hamburger.addEventListener('click', (event) => {
 
 // DISAPPEARING
 
-gsap.to(".name" , {
-			scrollTrigger: {
-				trigger: '.about',
-				start: "center center"
-			},
-			duration: 1,
-			opacity: 0,
-			ease: "power2"
-		})
+
 
 
 const disAnimationNavbar = () => {
@@ -113,6 +105,30 @@ disAnimationNavbar();
 // HOMEPAGE ANIMATION
 
 gsap.from('.homepage-title', {duration: 6, opacity: 0, ease:"power1"})
+
+
+// title anim
+
+let el = document.getElementById('turbulence');
+let title = document.querySelector('.homepage-title')
+
+tl = new TimelineMax({paused: true});
+
+createHoverTimeline = ()=> {	
+	tl.to(el, 5, {attr: { baseFrequency: '0 0' }, repeat: -1})	
+}
+
+tl.play();
+
+title.addEventListener('mouseenter' , (event) => {
+	title.classList.toggle('filter')
+	createHoverTimeline()
+})
+
+title.addEventListener('mouseleave' , (event) => {
+	title.classList.toggle('filter')
+	createHoverTimeline()
+})
 
 // ABOUT ANIMATIONS
 
