@@ -1,6 +1,42 @@
-// HORIZONTAL SCROLL 
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
-gsap.registerPlugin(ScrollTrigger)
+ScrollTrigger.defaults({
+  toggleActions: "restart pause resume pause"
+});
+
+/* Main navigation */
+
+const panelsSection = document.querySelector("#panels");
+const panelsContainer = document.querySelector("#scroll");
+document.querySelectorAll(".anchor").forEach(anchor => {
+  anchor.addEventListener("click", function(e) {
+    e.preventDefault();
+
+    const targetElem = document.querySelector(e.target.getAttribute("href"));
+    if(targetElem && panelsContainer.isSameNode(targetElem.parentElement)) {
+      const containerOffset = panelsSection.offsetTop + targetElem.offsetLeft;
+
+      gsap.to(window, {
+        scrollTo: {
+          y: containerOffset,
+          autoKill: false
+        },
+        duration: 1
+      });
+    } else {
+      gsap.to(window, {
+        scrollTo: {
+          y: targetElem,
+          autoKill: false
+        },
+        duration: 1
+      });
+    }
+  });
+});
+
+
+// HORIZONTAL SCROLL 
 
 let scroll = document.getElementById("scroll")
 let about = document.getElementById("about")
@@ -54,10 +90,7 @@ hamburger.addEventListener('click', (event) => {
   hamburger.classList.toggle('openmenu')
 })
 
-hamburger.addEventListener('click', (event) => {
 
-	document.getElementById("menuPage").classList.add("visible");
-})
 
 // NAV DISAPPEARING
 

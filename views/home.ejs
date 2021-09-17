@@ -29,10 +29,10 @@
       </div>
     </div>
     <div class="menu-page">
-      <a href="#homepage">[home.]</a>
-      <a href="#about">[about.]</a>
-      <a href="#languages">[languages.]</a>
-      <a href="#contact">[contact.]</a>
+      <a href="#homepage" class="anchor">[home.]</a>
+      <a href="#about" class="anchor">[about.]</a>
+      <a href="#languages" class="anchor">[languages.]</a>
+      <a href="#contact" class="anchor">[contact.]</a>
     </div>
     <div class="line-horizontal" id ="line-navbar">
     </div>
@@ -40,52 +40,55 @@
     </div>
   </nav>
     
-    <div class="horizontal-scroll" id="scroll">
-      <section class="homepage" id="homepage">
-        <div class="left">
-          <div class="line-vertical"></div>
-        </div>
-        <div class="right">
-          <h1 class="homepage-title" id="homepage">JUNIOR FRONT-END DEVELOPER BASED IN BRUSSELS, <span>BELGIUM</span></h1>  
-        </div>
-      </section>
-      <section class="about" id="about">
-          <div class="left-about">
-            <div class="line-vertical">
-            </div>
-            <div class="about-signet">
-              <h3>about.</h3>
-            </div>
-            <div class="line-vertical-two">
-            </div>
+    <section id="panels">
+
+      <div class="horizontal-scroll" id="scroll">
+        <section class="homepage" id="homepage">
+          <div class="left">
+            <div class="line-vertical"></div>
           </div>
-          <div class="right-about">
-            <div class="image">
-              <img class="pic" src="static/img/pic.png" alt="">
-            </div>
-            <div class="text">
-              <div class="intro">
-                <p class="antoine">
-                  passionate about art, music & design, i am looking to learn more about creative development and everything that it involves. <br>
-                  i trully love ergononmy, motions & animations.
-                </p>
+          <div class="right">
+            <h1 class="homepage-title" id="homepage">JUNIOR FRONT-END DEVELOPER BASED IN BRUSSELS, <span>BELGIUM</span></h1>  
+          </div>
+        </section>
+        <section class="about" id="about">
+            <div class="left-about">
+              <div class="line-vertical">
               </div>
-              <div class="story">
-                <p class="p">
-                  after doing an apprenticeship in Data-driven Marketing where I had the chance to tackle coding for the first time, I directly wanted to dig deeper, know more and learn everything about it.
-                  <br>
-                  it made sense to find the perfect bootcamp in order to gain knowledge and work on concrete projects to gain as many experience as I can.
-                  That’s why I’m currently following an apprenticeship in Full-Stack Development @BeCode !
-                  <br>
-                  i'd like to be able to build and maintain web application independently
-                  <br>
-                  more than ready to offer my freshly acquired specialized knowledge, learn even more by working on real cases
-                </p>  
-              </div>                    
-            </div>     
-          </div>
-      </section>
-    </div>
+              <div class="about-signet">
+                <h3>about.</h3>
+              </div>
+              <div class="line-vertical-two">
+              </div>
+            </div>
+            <div class="right-about">
+              <div class="image">
+                <img class="pic" src="static/img/pic.png" alt="">
+              </div>
+              <div class="text">
+                <div class="intro">
+                  <p class="antoine">
+                    passionate about art, music & design, i am looking to learn more about creative development and everything that it involves. <br>
+                    i trully love ergononmy, motions & animations.
+                  </p>
+                </div>
+                <div class="story">
+                  <p class="p">
+                    after doing an apprenticeship in Data-driven Marketing where I had the chance to tackle coding for the first time, I directly wanted to dig deeper, know more and learn everything about it.
+                    <br>
+                    it made sense to find the perfect bootcamp in order to gain knowledge and work on concrete projects to gain as many experience as I can.
+                    That’s why I’m currently following an apprenticeship in Full-Stack Development @BeCode !
+                    <br>
+                    i'd like to be able to build and maintain web application independently
+                    <br>
+                    more than ready to offer my freshly acquired specialized knowledge, learn even more by working on real cases
+                  </p>  
+                </div>                    
+              </div>     
+            </div>
+        </section>
+      </div>
+    </section>
     <div class="vertical-scroll">
       <section class="languages" id="languages">
           <div class="languages-header">
@@ -252,6 +255,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollToPlugin.min.js"></script>
 
   <script src="static/scripts/home.js"></script>
   <script src="static/scripts/contact.js"></script>
