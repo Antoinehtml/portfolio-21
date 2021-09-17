@@ -58,31 +58,6 @@ gsap.to(scroll, {
 // NAVBAR HAMBURGER ANIMATION
 
 const hamburger = document.querySelector(".menu")
-const menuPage = document.querySelector(".menu-page")
-const initHamburger = () => {
-	document.getElementById("hidden").style.display = "none";
-	document.getElementById("lineUp").style.transform = "rotate(45deg)";
-	document.getElementById("lineUp").style.margin = "0";
-	document.getElementById("lineUp").style.position = "absolute";
-	document.getElementById("lineDown").style.transform = "rotate(-45deg)";
-	document.getElementById("menuPage").style.visibility = "visible";
-	document.getElementById("menuPage").style.transform = "translateY(149px)";
-}
-
-const closeHamburger = () => {
-	document.getElementById("hidden").style.display = "";
-	document.getElementById("lineUp").style.transform = "";
-	document.getElementById("lineUp").style.margin = "";
-	document.getElementById("lineUp").style.position = "";
-	document.getElementById("lineDown").style.transform = "";
-	document.getElementById("menuPage").style.visibility = "";
-	document.getElementById("menuPage").style.transform = "";
-}
-
-
-// hamburger.addEventListener('mouseenter', (event) => {
-// 	initHamburger()
-// })
 
 hamburger.addEventListener('click', (event) => {
 	let cardContainer = document.querySelector('.menu-page');
@@ -92,7 +67,20 @@ hamburger.addEventListener('click', (event) => {
 
 
 
-// NAV DISAPPEARING
+// NAV ANIMATIONS MOBILE
+
+// DISAPPEARING
+
+gsap.to(".name" , {
+			scrollTrigger: {
+				trigger: '.about',
+				start: "center center"
+			},
+			duration: 1,
+			opacity: 0,
+			ease: "power2"
+		})
+
 
 const disAnimationNavbar = () => {
 	if(window.matchMedia("(max-width: 700px)").matches){
@@ -119,30 +107,8 @@ const disAnimationNavbar = () => {
 
 disAnimationNavbar();
 
+// REAPPEARING
 
-const appearAnimationNavbar = () => {
-	if(window.matchMedia("(max-width: 800px)").matches){
-		gsap.to(".name" , {
-			scrollTrigger: {
-				trigger: '.homepage',
-				start: "top top"
-			},
-			opacity: 1,
-			ease: "power2",
-
-		})
-
-		gsap.to("#line-navbar" , {
-			scrollTrigger: {
-				trigger: '.homepage',
-				start: "center top"
-			},
-			opacity: 1,
-		})
-	}
-}
-
-// appearAnimationNavbar()
 
 // HOMEPAGE ANIMATION
 
@@ -265,9 +231,6 @@ const resizeLanguage = () => {
 resizeLanguage()
 
 
-
-
-
 // TIME ON FOOTER
 
 var dt = new Date();
@@ -276,27 +239,27 @@ document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
 
 // POSITION NAVBAR WITHOUT FOOTER
 
-const navFloat = document.querySelector('.nav')
-const footer = document.querySelector('.footer')
-const languagesPage = document.querySelector('.languages')
+// const navFloat = document.querySelector('.nav')
+// const footer = document.querySelector('.footer')
+// const languagesPage = document.querySelector('.languages')
 
 
-const checkOffset = () => {
-	function getRectTop(el){
-		const rect = el.getBoundingClientRect();
-		return rect.top ;
-	}
-	if((getRectTop(navFloat) + document.body.scrollTop) + navFloat.offsetHeight >= (getRectTop(footer) + document.body.scrollTop) - 700)
-    navFloat.style.position = 'absolute';
-  if(document.body.scrollTop + window.innerHeight < (getRectTop(footer) + document.body.scrollTop))
-    navFloat.style.position = 'fixed'; // restore when you scroll up
+// const checkOffset = () => {
+// 	function getRectTop(el){
+// 		const rect = el.getBoundingClientRect();
+// 		return rect.top ;
+// 	}
+// 	if((getRectTop(navFloat) + document.body.scrollTop) + navFloat.offsetHeight >= (getRectTop(footer) + document.body.scrollTop) - 700)
+//     navFloat.style.position = 'absolute';
+//   if(document.body.scrollTop + window.innerHeight < (getRectTop(footer) + document.body.scrollTop))
+//     navFloat.style.position = 'fixed'; // restore when you scroll up
 
 
-}
+// }
 
-document.addEventListener('scroll', function(){
-	checkOffset()
-})
+// document.addEventListener('scroll', function(){
+// 	checkOffset()
+// })
 
 // CURSOR
 // const circleSvg = document.querySelector('svg');
