@@ -71,9 +71,6 @@ hamburger.addEventListener('click', (event) => {
 
 // DISAPPEARING
 
-
-
-
 const disAnimationNavbar = () => {
 	if(window.matchMedia("(max-width: 700px)").matches){
 		gsap.to(".name" , {

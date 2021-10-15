@@ -15,7 +15,7 @@ body{
 }
 
 /* CURSOR DESIGN AND ANIMATION */
-svg{
+/*svg{
   width: 60px;
   position: absolute;
   animation: rotation 5s infinite linear;
@@ -23,7 +23,7 @@ svg{
   transition: top .3s, left .3s;
   transition-timing-function: ease-out;
   z-index: 1000;
-}
+}*/
 
 @keyframes rotation{
   from{
@@ -110,7 +110,7 @@ nav{
 }
 
 .openmenu #hidden{
-    display: none;
+  display: none;
 
 }
 .openmenu #lineUp{
@@ -516,6 +516,10 @@ button:hover{
 /* END OF DESIGN CONTACT PAGE */
 
 /* DESIGN FOOTER */
+
+/*footer{
+  position: fixed;
+}*/
 
 .footer-container{
   padding:  20px 160px;
